@@ -1,0 +1,49 @@
+p{
+    text-align: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    padding: 20px;
+    border: 5px solid #00000F;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+}
+
+#banner{
+    width: 100%;
+}
+
+em strong {
+    color: brown;
+}
+
+.items{
+    font-family: monospace;
+    font-size: 25px;
+}
+
+.diferenciales{
+    background-color: white;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+#imagenDif{
+    width: 50%;
+}

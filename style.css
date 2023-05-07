@@ -1,0 +1,246 @@
+
+
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caja {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.productos {
+    text-align: center;
+}
+
+.productos li {
+    padding: 2.5% 0;
+    display: inline-block;
+    width: 20%;
+    margin: 1.5% 1.5%;
+    box-sizing: border-box;
+    border: black solid 2px;
+    border-radius: 20px;
+}
+
+.productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.Producto-Descripcion {
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.Producto-Precio {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+nav a:hover {
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+.productos li:hover {
+    color: blueviolet;
+    border: 4px solid;
+}
+
+.productos li:hover h2 {
+    font-size: 35px;
+}
+
+.productos li:active {
+    color: aqua;
+    border: 4px solid;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 2.5%;
+    margin-top: 5%;
+}
+
+main {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 60px 0;
+}
+
+form label, form fieldset legend {
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron, form textarea {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox, form fieldset legend{
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    /* el pading 15px vertical y 0 en los lateraes */
+    padding: 15px 0;
+    margin-left: 5%;
+    font-size: 18px;
+    font-weight: bold;
+    color: white; 
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    /* transision mas lenta : tiempo en segundos */
+    transition: 1s all;
+    /* mano con dedito arriba */
+    cursor: pointer;
+    
+}
+
+.enviar:hover {
+    background-color: blueviolet;
+    /* cambia medidas */
+    transform: scale(120%);
+}
+
+table{
+    margin: 40px 160px;
+}
+thead{
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+}
+
+td,th{
+    padding: 10px 10px;
+    border: 1px solid;
+}
+
+/* CSS para la pagina index */
+
+.banner {
+    width: 100%;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 2em;
+    font-weight: bold;
+    clear: left;
+    text-shadow: 2px 2px 5px gray;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal p strong{
+    font-weight: bold;
+}
+
+.principal p em{
+    font-style: italic;
+}
+
+.imagenDiferencia{
+    width: 60%;
+    float: right;
+    /* izquierda abajo difuminacion extension y color */
+    box-shadow: 10px 10px 30px 10px black;
+}
+
+.imagenDiferencia:hover{
+    opacity: 60%;
+    transition: opacity 0.5s;
+}
+
+.utensilios{
+    width: 15%;
+    float: left; /* Establece la imagen a la izquierda del contenedor */
+    margin: 0 20px 20px 0; /* Agrega un margen a la derecha para separar la imagen del texto */
+}
+
+.map{
+    padding: 3em 0 3em;
+}
+
+.map p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.video{
+    clear: right;
+    padding: 3em 0 0 0;
+    text-align: center;
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales{
+    display: inline-block;
+}
+
+.items{
+    line-height: 1.5;
+}
+
+.items:first-child{
+    font-weight: bold;
+}
+
+/* responsive */
+
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video {
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+}

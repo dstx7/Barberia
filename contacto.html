@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <div class="caja">
+            <h1 id="logo">
+                <img src="imagenes/logo.png" alt="logo barberia alura">
+            </h1>
+            <nav>
+                <ul>
+                    <li> <a href="index.html"> Home </a> </li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <!-- inputs y sus etiquetas -->
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" class="input-padron" required>
+
+            <label for="correoelectronico">Correo Electrónico</label>
+            <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" class="input-padron" required placeholder="(xxx) xxxxxxx">
+
+
+
+            <!-- caja de tamaño manipulable -->
+            <label for="mensaje">Mensaje</label>
+            <textarea name="Mensaje" id="mensaje" cols="100" rows="10"></textarea>
+
+
+
+            <fieldset>
+                <legend>como lo busco rey? </legend>
+
+                <!-- input de punticos, el fieldset indica que todos los datos son del mismo tipo en su contenido  -->
+                <label for="radioemail"> <input type="radio" name="contacto" value="email" id="radioemail">
+                    email</label>
+
+                <!-- con la etiquet name se puede dejar solo un circulo disponible -->
+
+                <label for="tefono"> <input type="radio" name="contacto" value="telefono" id="tefono" checked>
+                    whtsap</label>
+
+
+                <label for="fonce"> <input type="radio" name="contacto" value="nose" id="fonce"> myvid</label>
+
+            </fieldset>
+
+            <fieldset>
+                <!-- franja de horario con select -->
+                <legend> en que horario le sirve? </legend>
+
+                <select name="" id="">
+                    <option value=""> mañana </option>
+                    <option value=""> tarde </option>
+                    <option value=""> noche </option>
+                </select>
+
+            </fieldset>
+
+
+            <!-- checkbox -->
+
+            <label for="" class="checkbox"> <input type="checkbox" checked> spam ?</label>
+
+            <input type="submit" value="Enviar formulario" class="enviar">
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>10-5</td>
+                </tr>
+                <tr>
+                    <td>Martes</td>
+                    <td>10-5</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>10-12</td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </main>
+
+    <footer>
+
+        <ul>
+            <li>
+                <img src="imagenes/logo-blanco.png" alt="logo barberia alura">
+                <h2> &copy Copyright dstx 2077</h2>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
